@@ -75,5 +75,5 @@ body {
 
 .selected {
     background-color: var(--light-blue);
-    color: white; 
+    color: var(--light-gray); 
 }
