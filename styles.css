@@ -12,7 +12,7 @@ body {
 
 }
 
-/*************** new css *************************/
+/*************** top css *************************/
 
 .month { 
     display: flex; 
@@ -39,7 +39,7 @@ body {
     font-size: 1.1rem;
 }
 
-/*************** old css *************************/
+/*************** bottom css *************************/
 
 
 #app-calendar { 
@@ -60,10 +60,11 @@ body {
 
 
 .dayOfMonth {
-    border-bottom: 1px solid var(--light-gray);
     border-right: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
     text-align: center;
-    padding-top: 5px; 
+    /* padding-top: opx;  */
+    padding-top: 5px;
     font-size: 12px; 
     cursor: pointer; 
     transition: background-color 200ms, color 200ms; 
@@ -81,19 +82,24 @@ body {
     color: greenyellow; 
 }
 
-.prev-dates, .next-date {opacity: 0.5;}
-
-.today { background-color: deepskyblue;}
-
 
 
 .prevDays, .next-days {
-    border-bottom: 1px solid var(--light-gray);
     border-right: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
     text-align: center;
-    padding-top: 5px; 
+    /* padding-top: 0px;  */
+    padding-top: 5px;
     font-size: 12px; 
     cursor: pointer; 
     transition: background-color 200ms, color 200ms; 
-    color: black; 
+    color: var(--light-gray); 
+    /* background-color: var(--light-gray); */
+    /* opacity: 0.5; */
+}
+
+.today { 
+    margin-top: 0px;
+    background-color: deepskyblue;
+    
 }
